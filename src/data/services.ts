@@ -30,4 +30,11 @@ export const services: Service[] = [
     fullDescription: "Keep your farm operations running smoothly with our professional equipment maintenance services. Our skilled technicians provide regular inspections, preventive maintenance, and prompt repairs for feeders, waterers, ventilation systems, and other critical farm equipment. We offer customized maintenance schedules, emergency repair services, and guidance on equipment upgrades to improve efficiency and reduce long-term costs.",
     imageUrl: "https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
   },
+  {
+    id: "5",
+    title: "Equipment Rental",
+    description: "Rent quality poultry farming equipment for short-term or long-term projects.",
+    fullDescription: "Our equipment rental service provides access to high-quality poultry farming equipment without the upfront investment costs. We offer a wide range of rental options including incubators, brooders, feeding systems, and specialized tools for both small-scale and commercial operations. All equipment is thoroughly maintained and sanitized between uses, and our team provides setup guidance and operational support throughout your rental period.",
+    imageUrl: "https://images.unsplash.com/photo-1516733968668-dbdce39c4651?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+  },
 ];

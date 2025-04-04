@@ -6,13 +6,15 @@ import NewsletterSection from '@/components/NewsletterSection';
 import { Button } from '@/components/ui/button';
 import { Service } from '@/types';
 import { useEffect, useState } from 'react';
+import { useLanguage } from '@/hooks/use-language';
 
-// Import the services array from Services.tsx
+// Import the services array from data/services
 import { services } from '@/data/services';
 
 const ServiceDetail = () => {
   const { id } = useParams<{ id: string }>();
   const [service, setService] = useState<Service | null>(null);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const foundService = services.find(s => s.id === id);
@@ -24,10 +26,10 @@ const ServiceDetail = () => {
       <div>
         <Navbar />
         <div className="container-custom py-16 text-center">
-          <h1 className="text-3xl font-bold text-poultry-brown mb-4">Service Not Found</h1>
+          <h1 className="text-3xl font-bold text-poultry-brown mb-4">{t('service-not-found')}</h1>
           <p className="text-gray-600 mb-8">We couldn't find the service you're looking for.</p>
           <Button asChild>
-            <a href="/services">Back to Services</a>
+            <a href="/services">{t('back-to-services')}</a>
           </Button>
         </div>
         <Footer />
@@ -59,13 +61,13 @@ const ServiceDetail = () => {
               />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-poultry-brown mb-4">About This Service</h2>
+              <h2 className="text-2xl font-bold text-poultry-brown mb-4">{t('about-service')}</h2>
               <div className="w-24 h-1 bg-poultry-green mb-6"></div>
               <p className="text-gray-700 whitespace-pre-line mb-8">
                 {service.fullDescription}
               </p>
               <Button className="bg-poultry-brown hover:bg-poultry-brown/90">
-                Request This Service
+                {t('request-service')}
               </Button>
             </div>
           </div>

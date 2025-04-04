@@ -4,10 +4,13 @@ import { Link } from 'react-router-dom';
 import { ShoppingCart, Menu, X, User } from 'lucide-react';
 import { Button } from './ui/button';
 import { useCart } from '@/hooks/use-cart';
+import { useLanguage } from '@/hooks/use-language';
+import LanguageToggle from './LanguageToggle';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { items } = useCart();
+  const { t } = useLanguage();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -24,15 +27,16 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="font-medium link-hover">Home</Link>
-            <Link to="/shop" className="font-medium link-hover">Shop</Link>
-            <Link to="/services" className="font-medium link-hover">Services</Link>
-            <Link to="/about" className="font-medium link-hover">About</Link>
-            <Link to="/contact" className="font-medium link-hover">Contact</Link>
+            <Link to="/" className="font-medium link-hover">{t('home')}</Link>
+            <Link to="/shop" className="font-medium link-hover">{t('shop')}</Link>
+            <Link to="/services" className="font-medium link-hover">{t('services')}</Link>
+            <Link to="/about" className="font-medium link-hover">{t('about')}</Link>
+            <Link to="/contact" className="font-medium link-hover">{t('contact')}</Link>
           </div>
 
           {/* Action Buttons */}
           <div className="hidden md:flex items-center space-x-4">
+            <LanguageToggle />
             <Link to="/account">
               <Button variant="ghost" size="icon">
                 <User className="h-5 w-5 text-poultry-brown" />
@@ -52,6 +56,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-4">
+            <LanguageToggle />
             <Link to="/cart" className="relative">
               <Button variant="ghost" size="icon">
                 <ShoppingCart className="h-5 w-5 text-poultry-brown" />
@@ -72,12 +77,12 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t mt-4 animate-fade-in">
             <div className="flex flex-col space-y-4">
-              <Link to="/" className="font-medium px-2 py-1" onClick={() => setIsMenuOpen(false)}>Home</Link>
-              <Link to="/shop" className="font-medium px-2 py-1" onClick={() => setIsMenuOpen(false)}>Shop</Link>
-              <Link to="/services" className="font-medium px-2 py-1" onClick={() => setIsMenuOpen(false)}>Services</Link>
-              <Link to="/about" className="font-medium px-2 py-1" onClick={() => setIsMenuOpen(false)}>About</Link>
-              <Link to="/contact" className="font-medium px-2 py-1" onClick={() => setIsMenuOpen(false)}>Contact</Link>
-              <Link to="/account" className="font-medium px-2 py-1" onClick={() => setIsMenuOpen(false)}>My Account</Link>
+              <Link to="/" className="font-medium px-2 py-1" onClick={() => setIsMenuOpen(false)}>{t('home')}</Link>
+              <Link to="/shop" className="font-medium px-2 py-1" onClick={() => setIsMenuOpen(false)}>{t('shop')}</Link>
+              <Link to="/services" className="font-medium px-2 py-1" onClick={() => setIsMenuOpen(false)}>{t('services')}</Link>
+              <Link to="/about" className="font-medium px-2 py-1" onClick={() => setIsMenuOpen(false)}>{t('about')}</Link>
+              <Link to="/contact" className="font-medium px-2 py-1" onClick={() => setIsMenuOpen(false)}>{t('contact')}</Link>
+              <Link to="/account" className="font-medium px-2 py-1" onClick={() => setIsMenuOpen(false)}>{t('account')}</Link>
             </div>
           </div>
         )}
