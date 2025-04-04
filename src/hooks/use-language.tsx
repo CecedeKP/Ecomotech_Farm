@@ -75,6 +75,7 @@ export const translations: Translations = {
   'training': { en: 'Training Programs', fr: 'Programmes de Formation' },
   'maintenance': { en: 'Equipment Maintenance', fr: 'Maintenance des Équipements' },
   'rental': { en: 'Equipment Rental', fr: 'Location d\'Équipements' },
+  'logistics': { en: 'Logistics & Transport', fr: 'Logistique et Transport' },
   'other': { en: 'Other', fr: 'Autre' },
 };
 

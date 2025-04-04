@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-poultry-brown">Poultry<span className="text-poultry-green">Farm</span></span>
+            <span className="text-2xl font-bold text-poultry-brown">Ecomotech<span className="text-poultry-green">Farm</span></span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">PoultryFarm</h3>
+            <h3 className="text-xl font-bold">EcomotechFarm</h3>
             <p className="text-sm text-gray-200">Fresh, Healthy, and Sustainable Poultry for Every Home</p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-poultry-yellow">
@@ -57,7 +57,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail size={16} />
-                <span className="text-sm">info@poultryfarm.com</span>
+                <span className="text-sm">info@ecomotechfarm.com</span>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-300">
-          <p>&copy; {new Date().getFullYear()} PoultryFarm. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} EcomotechFarm. All rights reserved.</p>
         </div>
       </div>
     </footer>

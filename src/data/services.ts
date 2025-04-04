@@ -37,4 +37,11 @@ export const services: Service[] = [
     fullDescription: "Our equipment rental service provides access to high-quality poultry farming equipment without the upfront investment costs. We offer a wide range of rental options including incubators, brooders, feeding systems, and specialized tools for both small-scale and commercial operations. All equipment is thoroughly maintained and sanitized between uses, and our team provides setup guidance and operational support throughout your rental period.",
     imageUrl: "https://images.unsplash.com/photo-1516733968668-dbdce39c4651?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
   },
+  {
+    id: "6",
+    title: "Logistics & Transport",
+    description: "Specialized transportation services for all your poultry farming needs.",
+    fullDescription: "Our comprehensive logistics and transport services are designed to meet all your poultry farming transportation needs. We offer specialized solutions for egg transportation with temperature-controlled vehicles to maintain freshness and prevent breakage. Our chicken feed transportation ensures timely delivery with protection against moisture and contaminants. We also provide reliable transport for poultry farm equipment and materials with careful handling and secure loading systems. All our transport services prioritize safety, timeliness, and maintaining the quality of your valuable farm products and supplies.",
+    imageUrl: "https://images.unsplash.com/photo-1626963559537-547244f4539a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+  },
 ];

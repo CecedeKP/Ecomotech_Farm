@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import NewsletterSection from '@/components/NewsletterSection';
 import ServiceCard from '@/components/ServiceCard';
-import { Building, Clipboard, BookOpen, Wrench, Tractor } from 'lucide-react';
+import { Building, Clipboard, BookOpen, Wrench, Tractor, Truck } from 'lucide-react';
 import { useLanguage } from '@/hooks/use-language';
 import { services } from '@/data/services';
 
@@ -13,6 +13,7 @@ const serviceIcons = [
   <BookOpen size={48} />,
   <Wrench size={48} />,
   <Tractor size={48} />,
+  <Truck size={48} />,
 ];
 
 const Services = () => {
