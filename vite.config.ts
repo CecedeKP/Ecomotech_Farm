@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 export default defineConfig({
-  base: '/Ecomotech_Farm/',
+  base: '/Ecomotech_Farm/',  // Match GitHub repository name exactly
   plugins: [react()],
   resolve: {
     alias: {
@@ -13,6 +13,11 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   },
   server: {
     port: 3000,
