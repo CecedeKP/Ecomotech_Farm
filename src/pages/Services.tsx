@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import NewsletterSection from '@/components/NewsletterSection';
 import ServiceCard from '@/components/ServiceCard';
-import { Farm, Clipboard, BookOpen, Wrench } from 'lucide-react';
+import { Building, Clipboard, BookOpen, Wrench } from 'lucide-react';
 import { Service } from '@/types';
 
 const services: Service[] = [
@@ -38,7 +38,7 @@ const services: Service[] = [
 ];
 
 const serviceIcons = [
-  <Farm size={48} />,
+  <Building size={48} />,
   <Clipboard size={48} />,
   <BookOpen size={48} />,
   <Wrench size={48} />,
